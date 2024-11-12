@@ -30,6 +30,7 @@
 
 ### Задание 2
 
+```yaml
 services:
 
 volumes:
@@ -41,12 +42,13 @@ networks:
        config:
         - subnet: 10.5.0.0/16
         - gateway: 10.5.0.1
+```
 
 ---
 
 ### Задание 3
 
-
+```yaml
 services:
   prometheus:
     image: prom/prometheus:v2.47.2
@@ -71,11 +73,13 @@ networks:
        config:
         - subnet: 10.5.0.0/16
         - gateway: 10.5.0.1
+```
 
-
+---
 
 ### Задание 4
 
+```yaml
 services:
   prometheus:
     image: prom/prometheus:v2.47.2
@@ -111,3 +115,6 @@ networks:
        config:
         - subnet: 10.5.0.0/16
         - gateway: 10.5.0.1
+```
+
+---
