@@ -4,7 +4,7 @@ services:
     container_name: ivanov-av-my-netology-prometheus
     command: --web.enable-lifecycle --config.file=/etc/prometheus/prometheus.yml
     ports:
-      - "9090:9090"
+      - 9090:9090
     volumes:
       - ./prometheus:/etc/prometheus
       - prometheus-data:/prometheus
@@ -18,7 +18,7 @@ services:
     ports:
       - 9091:9091
     networks:
-      - vanov-av-my-netology-hw
+      - ivanov-av-my-netology-hw
     depends_on:
       - prometheus
     restart: always
@@ -64,6 +64,7 @@ networks:
   ivanov-av-my-netology-hw:
      driver: bridge
      ipam:
+       driver: default
        config:
-        - subnet: 10.5.0.0/16
-        - gateway: 10.5.0.1
+        - subnet: "10.5.0.0/16"
+          gateway: "10.5.0.1"
