@@ -97,3 +97,9 @@ networks:
 ```
 
 ---
+
+### Скриншоты:
+
+![Grafana](https://github.com/drumlast/ivanov_av_docker-2-hw/blob/main/img/grafana.png)
+![docker ps](https://github.com/drumlast/ivanov_av_docker-2-hw/blob/main/img/docker%20ps.png)
+![docker rm](https://github.com/drumlast/ivanov_av_docker-2-hw/blob/main/img/docker%20rm-all-containers.png)
